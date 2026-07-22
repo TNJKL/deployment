@@ -1,0 +1,8 @@
+# Environments
+.env
+bookmark_service/.env
+
+# IDEs and OS files
+.idea/
+.DS_Store
+Thumbs.db
