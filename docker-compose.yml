@@ -6,10 +6,9 @@ services:
     container_name: redis
 
   bookmark_service:
-    image: ththi/bookmark_service:latest
-    build: .
+    image: ththi/bookmark_service:v1.0.1
     restart: always
-    container_name: bookmark-service
+    container_name: bookmark_service
     env_file:
       - ./bookmark_service/.env
     depends_on:
