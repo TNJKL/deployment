@@ -6,7 +6,7 @@ services:
     container_name: redis
 
   bookmark_service:
-    image: ththi/bookmark_service:v2.0.1
+    image: ththi/bookmark_service:v2.0.2
     restart: always
     container_name: bookmark_service
     env_file:
