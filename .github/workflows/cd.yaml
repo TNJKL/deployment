@@ -12,10 +12,9 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Deploy Appication
-        working-directory: /root/bookmark-management
+        working-directory: /root/bookmark-management/deployment
         run: |
           echo "Deploying application..."
-          cd ./deployment
           git pull
           docker rm -f bookmark_service
           docker-compose pull bookmark_service
